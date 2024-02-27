@@ -1,18 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>kfc-form</title>
-</head>
-<body>
+  </head>
+  <body>
     <section class="form-section">
-        <div class="logo-container">
-            <img src="./kfc-logo.svg">
-        </div>
-        <div class="form-container">
-            <h1>PLACE YOUR ORDER BELOW</h1>  
-        </div>     
+      <div class="logo-container">
+        <img src="./kfc-logo.svg" />
+      </div>
+      <h1>PLACE YOUR ORDER BELOW</h1>
+      <form action="form.php" method="POST" class="form-container">
+        <p>
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" />
+        </p>
+        <p>
+          <label for="second-name">Second Name:</label>
+          <input type="text" id="second-name" name="second-name" />
+        </p>
+        <p>
+          <label for="house-number-name">House Number:</label>
+          <input type="text" id="house-number-name" name="house-number-name" />
+        </p>
+        <p>
+          <label for="street">Street:</label>
+          <input type="text" id="street-name" name="street"/>
+        </p>
+        <p>
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city"/>
+        </p>
+        <p>
+          <label for="county">County:</label>
+          <input type="text" id="county" name="county" />
+        </p>
+        <p>
+          <label for="post-code">Post Code:</label>
+          <input type="text" id="post-code" name="post-code" />
+        </p>
+        <p>
+          <label for="select-food">Select Food:</label>
+          <select name="select-food" id="food">
+            <option value="sharing-bucket">Sharing Bucket</option>
+            <option value="box-meal">Box Meal</option>
+            <option value="burger">Burger</option>
+            <option value="vegan-burger">Vegan Burger</option>
+            <option value="bucket-for-one">Bucket for One</option>
+            <option value="twister-wrap">Twister Wrap</option>
+            <option value="rice-box">Rice Box</option>
+          </select>
+        </p>
+        <input type="submit">
+      <form>
     </section>
-</body>
+  </body>
 </html>
