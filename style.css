@@ -41,8 +41,16 @@ h1 {
   font-size: 62px;
 }
 
+label {
+    font-family: "Fira Sans", sans-serif;
+}
+
 input {
     width:100%;
+    padding:1rem;
+    font-size:1rem;
+    border:1px solid grey;
+    color:grey;
 }
 
 input[type="text"] {
