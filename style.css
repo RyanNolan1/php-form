@@ -19,6 +19,12 @@
   align-items: center;
   justify-content: center;
   height: calc(100vh - 207px);
+  background-color: #eeecec;
+}
+
+.form-container {
+  padding: 4rem;
+  background: white;
 }
 
 h1 {
