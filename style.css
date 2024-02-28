@@ -4,22 +4,25 @@
 }
 
 .logo-container {
-  padding: 2rem 0;
-  max-width: 80%;
+  padding: 2rem 4rem;
+  width:100%;
   margin: 0 auto;
+  flex-shrink:1;
 }
 
 .container {
-  height: 100px;
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
 }
 
 .form-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: calc(100vh - 207px);
+  flex-grow:1;
   background-color: #eeecec;
-  padding:0 4rem;
+  padding:4rem 4rem;
 }
 
 .form-container {
@@ -34,11 +37,12 @@ h1 {
   background: black;
   color: white;
   text-align: center;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
   font-weight: 700;
   font-family: "Fira Sans", sans-serif;
   font-style: normal;
   font-size: 62px;
+  flex-shrink:1;
 }
 
 label {
