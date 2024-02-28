@@ -1,3 +1,9 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+</head> 
+  
+<body> 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $firstName = $_POST["first-name"];
@@ -8,14 +14,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $county = $_POST["county"];
     $postCode = $_POST["post-code"];
     $selectFood = $_POST["select-food"];
-
-    echo "First Name: " . $firstName . "<br>";
-    echo "Second Name: " . $secondName . "<br>";
-    echo "House Number: " . $houseNumber . "<br>";
-    echo "Street: " . $street . "<br>";
-    echo "City: " . $city . "<br>";
-    echo "County" . $county . "<br>";
-    echo "Post Code: " . $postCode. "<br>";
-    echo "Select Food: " . $selectFood . "<br>";
+?>
+<div class="form-container">
+    <p><?php echo $firstName; ?></p>
+    <p><?php echo $secondName; ?></p>
+    <p><?php echo $houseNumber; ?></p>
+    <p><?php echo $street; ?></p>
+    <p><?php echo $city; ?></p>
+    <p><?php echo $county; ?></p>
+    <p><?php echo $postCode; ?></p>
+    <p><?php echo $selectFood; ?></p>
+</div>
+<?php
 }
 ?>
+
+</body> 
+</html>
+
+
+
+
+
