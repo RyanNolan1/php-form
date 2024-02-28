@@ -27,17 +27,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $postCode = $_POST["post-code"];
     $selectFood = $_POST["select-food"];
 ?>
-<div class="form-container">
+<div class="output-container">
     <p><?php echo "Hello " . $firstName . ","; ?></p>
-    <p><?php echo "Thank you for your order of " . $selectFood . "!"; ?></p>
+    <p><?php echo "Thank you for your order of a " . $selectFood . "!"; ?></p>
+    <div class="address-container">
     <p><?php echo "This is now making it's way to you at: </br>";
     echo $houseNumberName . "</br>";
     echo $street . "</br>";
-    echo $city . "</br>";;
-    echo $county . "</br>";;
-    echo $postCode . "</br>";;
+    echo $city . "</br>";
+    echo $county . "</br>";
+    echo $postCode . "</br>";
+    echo "Enjoy!";
     ?>
 </p>
+</div>
 </div>
 <?php
 }
