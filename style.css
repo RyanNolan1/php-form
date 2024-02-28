@@ -52,6 +52,7 @@ label {
 input {
     width:100%;
     padding:1rem 0;
+    padding-left:1rem;
     font-size:1rem;
     border:1px solid grey;
     color:grey;
@@ -59,6 +60,13 @@ input {
 
 input[type="text"] {
   margin-top: 0.4rem;
+}
+
+select {
+  margin-top: 0.4rem;
+  padding:1rem;
+  border-radius: 0;
+  font-size:1rem;
 }
 
 #submit-button {
