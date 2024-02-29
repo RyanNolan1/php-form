@@ -17,6 +17,11 @@
       <h1>THANK YOU FOR YOUR ORDER!</h1>
     <section class="form-section">
 <?php
+
+
+
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $firstName = htmlspecialchars($_POST["first-name"]);
     $secondName = htmlspecialchars($_POST["second-name"]);
@@ -26,6 +31,46 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $county = htmlspecialchars($_POST["county"]);
     $postCode = htmlspecialchars($_POST["post-code"]);
     $selectFood = htmlspecialchars($_POST["select-food"]);
+
+    if (empty($firstname)) {
+        header("Location: ./index.php");
+        exit();
+    }
+    
+    if (empty($secondName)) {
+        header("Location: ./index.php");
+        exit();
+    }
+    
+    if (empty($houseNumberName)) {
+        header("Location: ./index.php");
+        exit();
+    }
+    
+    if (empty($street)) {
+        header("Location: ../index.php");
+        exit();
+    }
+    
+    if (empty($city)) {
+        header("Location: ../index.php");
+        exit();
+    }
+    
+    if (empty($county)) {
+        header("Location: ../index.php");
+        exit();
+    }
+    
+    if (empty($postCode)) {
+        header("Location: ../index.php");
+        exit();
+    }
+    
+    if (empty($selectFood)) {
+        header("Location: ../index.php");
+        exit();
+    }
 ?>
 <div class="output-container">
     <p><?php echo "Hello " . $firstName . ","; ?></p>
