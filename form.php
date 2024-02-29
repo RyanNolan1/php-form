@@ -18,14 +18,14 @@
     <section class="form-section">
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $firstName = $_POST["first-name"];
-    $secondName = $_POST["second-name"];
-    $houseNumberName = $_POST["house-number-name"];
-    $street = $_POST["street"];
-    $city = $_POST["city"];
-    $county = $_POST["county"];
-    $postCode = $_POST["post-code"];
-    $selectFood = $_POST["select-food"];
+    $firstName = htmlspecialchars($_POST["first-name"]);
+    $secondName = htmlspecialchars($_POST["second-name"]);
+    $houseNumberName =htmlspecialchars( $_POST["house-number-name"]);
+    $street = htmlspecialchars($_POST["street"]);
+    $city = htmlspecialchars($_POST["city"]);
+    $county = htmlspecialchars($_POST["county"]);
+    $postCode = htmlspecialchars($_POST["post-code"]);
+    $selectFood = htmlspecialchars($_POST["select-food"]);
 ?>
 <div class="output-container">
     <p><?php echo "Hello " . $firstName . ","; ?></p>
