@@ -49,6 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ?>
 </p>
 </div>
+<a href="./index.php"class="red-button">RETURN</a>
 </div>
 </section>
   </div>

@@ -58,7 +58,7 @@
             <option value="rice-box">Rice Box</option>
           </select>
         </p>
-        <input type="submit" id="submit-button" name="submit">
+        <input type="submit" class="red-button" name="submit">
       </form>
       </div>
     </section>
