@@ -20,31 +20,31 @@
       <form action="form.php" method="POST" class="form-container">
         <p>
           <label for="first-name">First Name:</label><br>
-          <input type="text" id="first-name" name="first-name" />
+          <input required type="text" id="first-name" name="first-name" />
         </p>
         <p>
           <label for="second-name">Second Name:</label><br>
-          <input type="text" id="second-name" name="second-name" />
+          <input required type="text" id="second-name" name="second-name" />
         </p>
         <p>
           <label for="house-number-name">House Number:</label><br>
-          <input type="text" id="house-number-name" name="house-number-name" />
+          <input required type="text" id="house-number-name" name="house-number-name" />
         </p>
         <p>
           <label for="street">Street:</label><br>
-          <input type="text" id="street-name" name="street"/>
+          <input required type="text" id="street-name" name="street"/>
         </p>
         <p>
           <label for="city">City:</label><br>
-          <input type="text" id="city" name="city"/>
+          <input required type="text" id="city" name="city"/>
         </p>
         <p>
           <label for="county">County:</label><br>
-          <input type="text" id="county" name="county" />
+          <input required type="text" id="county" name="county" />
         </p>
         <p>
           <label for="post-code">Post Code:</label><br>
-          <input type="text" id="post-code" name="post-code" />
+          <input required type="text" id="post-code" name="post-code" />
         </p>
         <p>
           <label for="select-food">Select Food:</label><br>
