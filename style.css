@@ -103,6 +103,7 @@ select {
   font-size: 1rem;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
 }
 
 .red-button:hover {
